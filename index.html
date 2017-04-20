@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- this element sets the character set your document should use to utf-8, which includes most characters from all known human languages. Essentially it can now handle any textual content you might put on it. There is no reason not to set this, and it can help avoid some problems later on. JUST DELETE THIS WHEN YOU HAVE SEEN IT RICH -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Ademiq</title>
+
+<!-- CSS & FONT LINKS -->
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+
+</head>
+
+<!-- BODY AND CONTENT -->
+<body>
+<h1 class="main-titles">About Ademiq</h1>
+
+<!-- LETS CHOOSE A REAL VIDEO TO DO FURTHER TESTING. OTHER NOTES: 
+1) THE "controls" ADDS PLAY/STOP BUTTONS TO VIDEO. 2) THE TEXT INSIDE THE VIDEO TAG IS FALLBACK CONTENT THAT WILL SHOW IF THE VIDEO DOESNT WORK. 3) GIVING TWO SOURCES BECAUSE SOME BROWSERS/SERVERS READS DIFFERENT FILE FORMATS 4) "autoplay" = PLAY AUTOMATICALLY 5) loop = REPEATS ITSELF 6) muted = MUTED 7) poster = THUMBNAIL IMAGE BEFORE BEING PLAYED -->
+<video controls width="100%" height="100%"
+       autoplay loop muted
+       poster="images/ademiq-logo.jpg">
+  <source src="videos/rabbit320.mp4" type="video/mp4">
+  <source src="videos/rabbit320.webm" type="video/webm">
+  <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.mp4">link to the video</a> instead.</p>
+</video>
+
+<h2>The Mission</h2>
+<p>Hey you! Awesome, you want to know more about Ademiq and its mission to enhance and democratize learning throughout the world. Great. </p>
+<p>Forget about the time-consuming and often costly conventional tutoring. With a few clicks of a button you can have a live lesson with another person on the other side of the world.</p>
+<p>Use our sophisticated <a href="whiteboard-explained.html" style="color blue";>whiteboard</a> to draw, write, show, teach BLABLABLA. </p>
+<blockquote><p>Ademiq enables tutors to offer their services directly through Ademiq software. </p></blockquote>
+
+<!-- <pre> creates a block -->
+<pre><a href="log-in.html" style="color blue";>Log-in</a> and get started!</pre>
+
+<h2>The Backstory</h2>
+<p>The world over, hiring a tutor has traditionally been seen as a way to help struggling students to improve their grades. But in this modernized world tutoring is still by many regarded as an expensive and inefficient way too receive better grades. Our mission is to change this perception, we aim to stimulate teaching and learning among students. To give access to global online tutoring for students to reach out for assistance while studying at anytime, anywhere, to an affordable price is the ultimate goal.</p>
+<p>We want to differ from other online tutoring platforms by encouraging student on student interactions. Our goal is not to have an expensive high-end tutoring platform, where both we as a company and tutors charge and unreasonably high price for services provided. We want to revolutionise the industry by letting a 2nd year student tutor a 1st year student, where they set their own prices. This will be accomplished with delivering unique and innovative solutions optimized for educational achievements, career enhancements and personal development. This will provide the users a chance to be successful and achieve education goals in a non-expensive, friendly and amusing way. </p>
+
+<h2>The Team</h2>
+<p>The Ademiq team currently consist of 4 individuals which all have been studying at the same university and have had the same drive towards creating the most suitable tutoring service for students. </p>
+
+<!-- How to do proper blockquote/citation -->
+<h3>Richard Gyllenbern</h3>
+<blockquote><p>He is pretty cool</p><footer>Mauritz in <cite title="Washington Post">Washington Post</cite></footer></blockquote>
+
+<!-- 3 DIFFERENT TYPES OF PHOTO SHAPES -->
+<h3>Tobias Bjornsen (click the image)</h3>
+<img src="images/tobias.jpg" alt="tobias" class="img-circle" width=100 height=100>
+
+<h3>Feliks</h3>
+<img src="feliks2.jpg" alt="feliks" class="img-thumbnail" width=100 height=100>
+
+<h3>Jon Andre Pedersen</h3>
+<img src="jon.jpg" alt="jon" class="img-rounded" width=100 height=100>
+
+<!-- creates a selectable menu -->
+<h2>Who is the coolest?</h2>
+<select class="form-control">
+  <option>Richard</option>
+  <option>Jon</option>
+  <option>Feliks</option>
+  <option>Tobias</option>
+  <option>None of them</option>
+</select>
+
+<h2>Join the vision</h2>
+<ul> 
+  <li>Do you want to join the race of becoming the market leading tutoring service that will revolutionize the industry??</li>
+  <li>Would you like to collaborate with Ademiq??</li>
+  <li>Would you like to support Ademiq??</li>
+</ul>
+
+<!-- Create this page eventually -->
+<p>If you want to read more about Ademiq's online platform, check out <a href="how-it-works.html">"How it Works"</a></p>
+
+<!-- Simply linking to the same page -->
+<p><a href="index.html" style="color green";>To the top</a></p>
+
+
+<!-- VARIOUS WAYS TO CREATE BUTTON CLASSES, but only <button> elements are supported within BOOTSTRAP's nav and navbar components-->
+<a class="btn btn-default" href="#" role="button">Link</a>
+<button class="btn btn-default" type="submit">Button</button>
+<input class="btn btn-default" type="button" value="Input">
+<input class="btn btn-default" type="submit" value="Submit">
+
+
+<button>Change user</button>
+
+
+<!-- JAVASCRIPT AND JQUERY LINKS -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>
