@@ -11,69 +11,79 @@
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="styles/style.css">
-
 </head>
 
 <!-- BODY AND CONTENT -->
-<body>
-<h1 class="main-titles">About Ademiq</h1>
+<body class="body">
+<!-- HEADER MENU -->
+  <header class="mainHeader">
+    <nav>
+    <img src="images/ademiq-logo.jpg" alt="Ademiq Logo">
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">How it works</a>
+        <div class="dropdown-content">
+          <a href="introduction.html">Introduction</a>
+          <a href="#">FAQ</a>
+          <a href="#">Forum</a>
+          <a href="news.html">Blog</a>
+        </div>
+      </li>
+      <li><a href="#">Tutors</a></li>
+      <li><a href="#">Gamification</a></li>
+      <li><a href="#">Ambassadors</a></li>
+      <li><a href="log-in.html">Log In</a></li>
+    </ul></nav>
+  </header>
 
+<div id="main">
 <!-- LETS CHOOSE A REAL VIDEO TO DO FURTHER TESTING. OTHER NOTES: 
-1) THE "controls" ADDS PLAY/STOP BUTTONS TO VIDEO. 2) THE TEXT INSIDE THE VIDEO TAG IS FALLBACK CONTENT THAT WILL SHOW IF THE VIDEO DOESNT WORK. 3) GIVING TWO SOURCES BECAUSE SOME BROWSERS/SERVERS READS DIFFERENT FILE FORMATS 4) "autoplay" = PLAY AUTOMATICALLY 5) loop = REPEATS ITSELF 6) muted = MUTED 7) poster = THUMBNAIL IMAGE BEFORE BEING PLAYED -->
-<video controls width="100%" height="100%"
+1) THE "controls" ADDS PLAY/STOP BUTTONS TO VIDEO. 2) THE TEXT INSIDE THE VIDEO TAG IS FALLBACK CONTENT THAT WILL SHOW IF THE VIDEO DOESNT WORK. 3) GIVING TWO SOURCES BECAUSE SOME BROWSERS/SERVERS READS DIFFERENT FILE FORMATS 4) "autoplay" = PLAY AUTOMATICALLY 5) loop = REPEATS ITSELF 6) muted = MUTED 7) poster = THUMBNAIL IMAGE BEFORE BEING PLAYED 8. sub.vtt IS A SUBTITLE FILE I CREATED IN THE videos FOLDER, BUT I HAVENT GOTTEN IT TO WORK-->
+<div class="outer-container">
+    <div class="inner-container">
+        <div class="video-overlay"><h1>Welcome to Ademiq</h1><p>Learn on the best online tutoring platform in the world!</p>
+        <input type="text" class="form-control" id="search-input" placeholder="Search classes" style="-webkit-box-shadow: inset 0 0 0 1000px white !important;padding-bottom: 7px;"><button class="btn btn-inverse paper-shadow" id="search-button" onclick="SearchFunction.search()" type="button"><i class="fa fa-fw fa-search"></i></button></div>
+        <video id="player" 
+        src="videos/typing.mp4" autoplay loop muted></video>
+    </div>
+</div>
+
+<!-- OTHER WAY TO DO OVERLAY, BUT ARGUABLY THE ONE ABOVE IS MORE CORRECTLY EXECUTED
+<div class="contentv">
+<video width="100%" height="100%"
        autoplay loop muted
        poster="images/ademiq-logo.jpg">
-  <source src="videos/rabbit320.mp4" type="video/mp4">
+  <source src="videos/typing.mp4" type="video/mp4">
   <source src="videos/rabbit320.webm" type="video/webm">
-  <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.mp4">link to the video</a> instead.</p>
+  <track kind="subtitles" src="videos/sub.vtt" srclang="en">
+  <track label="English" kind="subtitles" srclang="en" src="videos/sub.vtt" default>
+  <p>Your browser doesn't support HTML5 video. Here is a <a href="videos/typing.mp4">link to the video</a> instead.</p>
 </video>
+</div> -->
 
-<h2>The Mission</h2>
-<p>Hey you! Awesome, you want to know more about Ademiq and its mission to enhance and democratize learning throughout the world. Great. </p>
-<p>Forget about the time-consuming and often costly conventional tutoring. With a few clicks of a button you can have a live lesson with another person on the other side of the world.</p>
-<p>Use our sophisticated <a href="whiteboard-explained.html" style="color blue";>whiteboard</a> to draw, write, show, teach BLABLABLA. </p>
-<blockquote><p>Ademiq enables tutors to offer their services directly through Ademiq software. </p></blockquote>
+<h2 class="homeTitles">MAIN FEATURES</h2>
 
-<!-- <pre> creates a block -->
-<pre><a href="log-in.html" style="color blue";>Log-in</a> and get started!</pre>
+<h2 class="homeTitles">LET'S START</h2>
+<i class="fa fa-graduation-cap" style="font-size:-webkit-xxx-large"></i>
+<h3>I want to teach</h3>
 
-<h2>The Backstory</h2>
-<p>The world over, hiring a tutor has traditionally been seen as a way to help struggling students to improve their grades. But in this modernized world tutoring is still by many regarded as an expensive and inefficient way too receive better grades. Our mission is to change this perception, we aim to stimulate teaching and learning among students. To give access to global online tutoring for students to reach out for assistance while studying at anytime, anywhere, to an affordable price is the ultimate goal.</p>
-<p>We want to differ from other online tutoring platforms by encouraging student on student interactions. Our goal is not to have an expensive high-end tutoring platform, where both we as a company and tutors charge and unreasonably high price for services provided. We want to revolutionise the industry by letting a 2nd year student tutor a 1st year student, where they set their own prices. This will be accomplished with delivering unique and innovative solutions optimized for educational achievements, career enhancements and personal development. This will provide the users a chance to be successful and achieve education goals in a non-expensive, friendly and amusing way. </p>
+<i class="fa fa-pencil" style="font-size:-webkit-xxx-large; float:right;"></i>
+<h3 style="float:right;">I want to learn</h3>
 
-<h2>The Team</h2>
-<p>The Ademiq team currently consist of 4 individuals which all have been studying at the same university and have had the same drive towards creating the most suitable tutoring service for students. </p>
+<button class="btn btn-default" type="submit">1192 Registered Tutors</button>
+<button class="btn btn-default" type="submit">6973 Registered Students</button>
 
-<!-- How to do proper blockquote/citation -->
-<h3>Richard Gyllenbern</h3>
-<blockquote><p>He is pretty cool</p><footer>Mauritz in <cite title="Washington Post">Washington Post</cite></footer></blockquote>
 
-<!-- 3 DIFFERENT TYPES OF PHOTO SHAPES -->
-<h3>Tobias Bjornsen (click the image)</h3>
+<h2>COURSES</h2>
+<h3>Math</h3>
 <img src="images/tobias.jpg" alt="tobias" class="img-circle" width=100 height=100>
-
-<h3>Feliks</h3>
+<h3>Language</h3>
 <img src="feliks2.jpg" alt="feliks" class="img-thumbnail" width=100 height=100>
-
-<h3>Jon Andre Pedersen</h3>
+<h3>Other</h3>
 <img src="jon.jpg" alt="jon" class="img-rounded" width=100 height=100>
 
-<!-- creates a selectable menu -->
-<h2>Who is the coolest?</h2>
-<select class="form-control">
-  <option>Richard</option>
-  <option>Jon</option>
-  <option>Feliks</option>
-  <option>Tobias</option>
-  <option>None of them</option>
-</select>
-
-<h2>Join the vision</h2>
-<ul> 
-  <li>Do you want to join the race of becoming the market leading tutoring service that will revolutionize the industry??</li>
-  <li>Would you like to collaborate with Ademiq??</li>
-  <li>Would you like to support Ademiq??</li>
-</ul>
+<h2>BEST RATED TUTORS</h2>
 
 <!-- Create this page eventually -->
 <p>If you want to read more about Ademiq's online platform, check out <a href="how-it-works.html">"How it Works"</a></p>
@@ -81,17 +91,17 @@
 <!-- Simply linking to the same page -->
 <p><a href="index.html" style="color green";>To the top</a></p>
 
-
-<!-- VARIOUS WAYS TO CREATE BUTTON CLASSES, but only <button> elements are supported within BOOTSTRAP's nav and navbar components-->
-<a class="btn btn-default" href="#" role="button">Link</a>
-<button class="btn btn-default" type="submit">Button</button>
-<input class="btn btn-default" type="button" value="Input">
-<input class="btn btn-default" type="submit" value="Submit">
-
-
-<button>Change user</button>
-
-
+  <footer class="mainFooter">
+    <h3>FOLLOW US</h3>
+    <div class="footerSocial">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-google"></i>
+      <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Copyright &copy; 2017 <a href="#" title="Ademiq">Ademiq.com</a></p>
+  </footer>
+</div>
 <!-- JAVASCRIPT AND JQUERY LINKS -->
 <script
   src="https://code.jquery.com/jquery-3.2.1.js"
