@@ -5,6 +5,7 @@ body {
   line-height: 1.5;
   text-align: left;
   padding-top:70px;
+  position:relative;
 }
 
 .body {
@@ -49,6 +50,7 @@ body {
   height: 50px;
 }
 
+/* EDITING JUMBOTRON */
 .jumbotron .row i {
   color:#42a5f5;
 }
@@ -56,6 +58,19 @@ body {
 .jumbotron {
   width: 100%;
 }
+
+.jumbotron .row {
+  margin-left: 10%;
+  margin-right:10%;
+}
+
+.jumbotron .row h3 {
+  font-weight: 600;
+}
+
+/*.jumbotron .row p {
+  font-style:oblique;
+}*/
 
 
 /* BLOG PAGE RELATED */
@@ -297,7 +312,7 @@ h1 {
     text-align: center;
 }
 .inner-container {
-    display: inline-block;
+/*    display: inline-block; */ /* BY DISABLING THIS I GOT FULLSCREEN VIDEO */
     position:relative;
 }
 .video-overlay {
@@ -315,7 +330,13 @@ h1 {
     border-radius: 5px;
     -moz-border-radius: 5px; /* Just to ensure it shows properly on mozilla, similar for the one below */
     -webkit-border-radius: 5px;
+    overflow-x:wrap;
 }
+
+.video-overlay h1 {
+  font-weight: 700;
+}
+
 video {
     width: 100%;
     height: 100%;
@@ -355,14 +376,319 @@ video {
   margin: auto auto;
 }
 
+.panel-default {
+    border-color: #e2e9e6;
+}
+
+.panel {
+    margin-bottom: 18px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 0;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+.panel-body .title-wrapper h4 {
+  text-transform:uppercase;
+}
+
+.panel-body {
+    padding: 16px;
+    display: table;
+    width: 100%;
+}
+
+.home-category-item .panel-body {
+    display: table;
+    width: 100%;
+}
+
+.panel-body .title-wrapper {
+    display: table-row;
+    width: 100%;
+    overflow: hidden;
+}
+
+.panel-body .title-wrapper h4 {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
+}
+
+.text-headline {
+    font-size: 1.84rem;
+    font-weight: 400;
+    line-height: 2.46rem;
+}
+
+.height-64 {
+    height: 64px !important;
+}
+.height-32 {
+    height: 32px !important;
+}
+
+/* MIGHT HAVE TO CHANGE ALL WITH PANEL-BODY TO .HOME-CATEGORY-ITEM .PANEL BODY" later if I figure out the code */
+.panel-body .subtitle-wrapper h5 {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
+}
+
+.panel-body .subtitle-wrapper {
+    display: table-row;
+    width: 100%;
+    height: 64px!important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight:500;
+}
+
+.panel-body .subtitle-wrapper h5 {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
+}
+
+.clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical>.btn-group:before, .btn-group-vertical>.btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-footer:before, .modal-footer:after {
+    content: " ";
+    display: table;
+}
+
+*:before, *:after {
+    box-sizing: border-box;
+}
+
+/*.row-courses {
+  position:relative;
+  height: 600px;
+}*/
+
+/* NOT SURE IF WORKS BUT TRYING TO APPLY SHADOW EFFECT */
+.paper-shadow.panel {
+    position: relative;
+}
+
+@media (min-width: 768px) {
+  .cover.overlay {
+    overflow: hidden;
+  }
+}
+
+.panel>.cover {
+  margin-bottom:0;
+}
+
+.cover {
+  overflow:hidden;
+  position:relative;
+  margin-bottom:18px;
+}
+
+.cover.overlay.cover-image-full>img, .cover.overlay.cover-image-full>.img {
+    width: 100%;
+}
+
+.cover.overlay .overlay.overlay-full {
+    top: 0;
+    height: 100%;
+}
+
+.cover.overlay.hover .overlay-hover {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.cover.overlay .overlay-bg-white {
+    background: -webkit-linear-gradient(left,rgba(255,255,255,.8),rgba(255,255,255,.6));
+    background: linear-gradient(to right,rgba(255,255,255,.8),rgba(255,255,255,.6));
+}
+
+.cover.overlay .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    padding: 18px;
+    display: table;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.cover.overlay .overlay.overlay-full .v-center {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    bottom: auto;
+    top: auto;
+    left: auto;
+    right: auto;
+}
+
+.cover.overlay .overlay *:last-child {
+    margin-bottom: 0;
+}
+
+.btn-circle.btn-lg {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+}
+
+.btn-circle.btn {
+    padding: 0;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+}
+
+.btn {
+    text-transform: uppercase;
+}
+
+.btn-circle {
+    border-radius: 50%;
+}
+
+.btn-white {
+    color: #444;
+    background-color: #fff;
+    border-color: #efefef;
+}
+
+.btn {
+    font-weight: 500;
+}
+
+.btn-lg, .btn-group-lg>.btn {
+    padding: 10px 16px;
+    font-size: 17px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 8px 12px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    border-radius: 2px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.bg-blue-300 {
+    background-color: #64b5f6;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    transform: translate(0,0);
+}
+
+.fa-mortar-board:before, .fa-graduation-cap:before {
+    content: "";
+}
+
+.padding-none {
+    padding: 0!important;
+}
+
+a {
+    background-color: transparent !important;
+}
+
+.height-100 {
+    height: 100px!important;
+}
+
+.icon-block {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    display: inline-block;
+    font-size: 35px;
+}
+
+.paper-shadow:before, .paper-shadow:after {
+    border-radius: inherit;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    display: block;
+    z-index: -1;
+}
+
+.paper-shadow[data-z="0.5"]:after, .paper-shadow[data-hover-z="0.5"]:hover:after {
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.17);
+}
+
+.paper-shadow.panel {
+    position: relative;
+}
+
+.paper-shadow:not(.navbar) {
+    z-index: 1;
+}
+
+.panel {
+    box-shadow: none;
+}
+
+.panel-default {
+    border-color: #e2e9e6;
+}
 
 
+.clearfix:after, .dl-horizontal dd:after, .container:after, .container-fluid:after, .row:after, .form-horizontal .form-group:after, .btn-toolbar:after, .btn-group-vertical>.btn-group:after, .nav:after, .navbar:after, .navbar-header:after, .navbar-collapse:after, .pager:after, .panel-body:after, .modal-footer:after {
+    clear: both;
+}
 
-
-
-
-
-
+/* IF EVER WANTING TO MAKE ALL SUB COURSES IN CAPITALIZED LETTERS
+.subtitle-wrapper h5 {
+  text-transform:uppercase;
+}*/
 
 
 
@@ -370,6 +696,8 @@ video {
 
 .homeTitles {
   text-align: center;
+  margin-top:10%;
+  margin-bottom: 2%;
 }
 
 .input-group .form-control {
