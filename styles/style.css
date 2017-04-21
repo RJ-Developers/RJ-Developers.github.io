@@ -346,8 +346,7 @@ video {
 }
 
 .mainFooterRow {
-  padding-bottom:20px;
-  width:80%;
+  padding-bottom:300px;
   margin: auto auto;
 }
 
@@ -362,10 +361,17 @@ video {
 }
 
 
-.container {
+.footer-container {
   width:100%;
   text-align:center;
   background-color:#222222;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .footerSection {
