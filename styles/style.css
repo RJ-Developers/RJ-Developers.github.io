@@ -4,11 +4,12 @@ body {
   font-size:; /* Base font size is 14px */
   line-height: 1.5;
   text-align: left;
+  padding-top:70px;
 }
 
 .body {
   margin: 0 auto;
-  margin-top:60px;
+  padding-top:70px;
   width: 70%;
   clear: both; /*Makes flow properly */
 }
@@ -262,61 +263,8 @@ li.dropdown {
   margin: 25px auto;
   border:solid 2px #222222;
 }
-
-h1 {
-  text-align: center;
-  font-family:"Raleway";
-  font:24pt;
-  color:;
-}
-
-hr {
-  height: 2px;
-}
-
-#header li {
-  float: left;
-  background-color: #333333;
-  border-right: 1px solid #bbb;
-}
-
-/*Making sure the last item does not have border*/
-#header li:last-child {
-    border-right: none;
-}
-
-#header li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-#header ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-/* Change the link color to #111 (black) on hover */
-#header li a:hover {
-    background-color: #111;
-}
-
 .active {
     text-decoration:underline;
-}
-
-
-/* CHANGING COLOR ON LINKS */
-a {
-  text-decoration: none;
 }
 
 /* CENTERING THE H1 */
@@ -324,56 +272,6 @@ h1 {
   font-size: 60px;
   text-align: center;
 }
-
-
-
-/* The body element is block level, meaning it takes up space on the page and can have margin and other spacing values applied to it. Images, on the other hand, are inline elements, meaning they can't. So to apply margins to the image, we have to give the image block-level behavior using display: block;.*/
-/*img {
-  display: block;
-  margin: 0 auto;
-}
-*/
-
-
-
-/*.controls button[data-state="subtitles"] {
-    height:85%;
-    text-indent:0;
-    font-size:16px;
-    font-size:1rem;
-    font-weight:bold;
-    color:#666;
-    background:#000;
-    border-radius:2px;
-}
-
-.subtitles-menu {
-    display:none;
-    position:absolute;
-    bottom:14.8%;
-    right:20px;
-    background:#666;
-    list-style-type:none;
-    margin:0;
-    padding:0;
-    width:100px;
-    padding:10px;
-}
-
-.subtitles-menu li {
-    padding:0;
-    text-align:center;
-}
-
-.subtitles-menu li button {
-    border:none;
-    background:#000;
-    color:#fff;
-    cursor:pointer;
-    width:90%;
-    padding:2px 5px;
-    border-radius:2px;
-}*/
 
 .contentv {
   position: relative;
@@ -421,10 +319,16 @@ h1 {
     margin: auto auto;
     left:30%;
     top:30%;
+    border-radius: 5px;
+    -moz-border-radius: 5px; /* Just to ensure it shows properly on mozilla, similar for the one below */
+    -webkit-border-radius: 5px;
 }
 video {
     width: 100%;
     height: 100%;
+    border-radius: 5px;
+    -moz-border-radius: 5px; /* Just to ensure it shows properly on mozilla, similar for the one below */
+    -webkit-border-radius: 5px;
 }
 
 .homeTitles {
