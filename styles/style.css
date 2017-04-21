@@ -43,11 +43,22 @@ body {
     padding-top: 0px;
 }
 
+/* SETTING LOGO IMAGE SIZE */
 .navbar-brand>img {
   width: 100px;
   height: 50px;
 }
 
+.jumbotron .row i {
+  color:#42a5f5;
+}
+
+.jumbotron {
+  width: 100%;
+}
+
+
+/* BLOG PAGE RELATED */
 .mainContent {
   line-height: 25px;
   border-radius: 5px;
@@ -182,7 +193,7 @@ li.dropdown {
   .body {
     width: 90%;
   }
-
+/* OLD HEADER MENU
   .mainHeader img {
    widht:100%;
   }
@@ -208,9 +219,10 @@ li.dropdown {
   .mainContent {
   line-height: 25px;
   border-radius: 5px;
-  -moz-border-radius: 5px; /* Just to ensure it shows properly on mozilla, similar for the one below */
+  -moz-border-radius: 5px; 
   -webkit-border-radius: 5px;
   }
+  */
 
   .content {
     width: 100%;
