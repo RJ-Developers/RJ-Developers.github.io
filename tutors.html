@@ -27,7 +27,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="index.html">
-            <img alt="brand" src="images/ademiq-logo.jpg" width="40" height="40">
+            <img alt="brand" src="images/ademiq-logo.jpg">
           </a>
         </div>
 
@@ -48,12 +48,12 @@
             <li class="active"><a href="tutors.html">Tutors <span class="sr-only">(current)</span></a></li>
           </ul>
 <!-- SEARCH FORM -->
-          <form class="navbar-form navbar-left">
+          <!-- <form class="navbar-form navbar-left">
             <div class="form-group">
               <input type="text" class="form-control" placeholder="Search">
             </div>
             <button type="submit" class="btn btn-default">Submit</button>
-          </form>
+          </form> -->
            <!--  RIGHT MENU HEADER ITEMS -->
           <ul class="nav navbar-nav navbar-right">
             <li><button type="button" class="btn btn-default navbar-btn" href="log-in.html">Sign in</button></li>
@@ -62,137 +62,72 @@
       </div> <!-- CONTAINER-FLUID  -->
     </nav>
 
-<div id="main">
-<!-- LETS CHOOSE A REAL VIDEO TO DO FURTHER TESTING. OTHER NOTES: 
-1) THE "controls" ADDS PLAY/STOP BUTTONS TO VIDEO. 2) THE TEXT INSIDE THE VIDEO TAG IS FALLBACK CONTENT THAT WILL SHOW IF THE VIDEO DOESNT WORK. 3) GIVING TWO SOURCES BECAUSE SOME BROWSERS/SERVERS READS DIFFERENT FILE FORMATS 4) "autoplay" = PLAY AUTOMATICALLY 5) loop = REPEATS ITSELF 6) muted = MUTED 7) poster = THUMBNAIL IMAGE BEFORE BEING PLAYED 8. sub.vtt IS A SUBTITLE FILE I CREATED IN THE videos FOLDER, BUT I HAVENT GOTTEN IT TO WORK-->
-<div class="outer-container">
-    <div class="inner-container">
-        <div class="video-overlay"><h1>Welcome to Ademiq</h1><p>Learn on the best online tutoring platform in the world!</p>
-        <input type="text" class="form-control" id="search-input" placeholder="Search classes" style="-webkit-box-shadow: inset 0 0 0 1000px white !important;padding-bottom: 7px;"><button class="btn btn-inverse paper-shadow" id="search-button" onclick="SearchFunction.search()" type="button"><i class="fa fa-fw fa-search"></i></button></div>
-        <video id="player" 
-        src="videos/typing.mp4" autoplay loop muted></video>
-    </div>
-</div>
+<div class="page-section">
 
-<!-- OTHER WAY TO DO OVERLAY, BUT ARGUABLY THE ONE ABOVE IS MORE CORRECTLY EXECUTED
-<div class="contentv">
-<video width="100%" height="100%"
-       autoplay loop muted
-       poster="images/ademiq-logo.jpg">
-  <source src="videos/typing.mp4" type="video/mp4">
-  <source src="videos/rabbit320.webm" type="video/webm">
-  <track kind="subtitles" src="videos/sub.vtt" srclang="en">
-  <track label="English" kind="subtitles" srclang="en" src="videos/sub.vtt" default>
-  <p>Your browser doesn't support HTML5 video. Here is a <a href="videos/typing.mp4">link to the video</a> instead.</p>
-</video>
-</div> -->
-<div class="jumbotron">
-  <h2>MAIN FEATURES</h2>
-  <div class="row">
-    <div class="col-xs-6 col-md-3">
-        <i class="fa fa-pencil" style="font-size:-webkit-xxx-large;"></i>
-        <p>Get the help you need from experts around the globe</p>
-    </div>
-    <div class="col-xs-6 col-md-3">
-        <i class="fa fa-pencil" style="font-size:-webkit-xxx-large;"></i>
-        <p>Flexible tutors allow up to 15 minutes trial on live-sessions</p>
-    </div>
-    <div class="col-xs-6 col-md-3">
-        <i class="fa fa-pencil" style="font-size:-webkit-xxx-large;"></i>
-        <p>Live 1-on-1 session with the tutors of your choosing</p>
-    </div>
-    <div class="col-xs-6 col-md-3">
-        <i class="fa fa-pencil" style="font-size:-webkit-xxx-large;"></i>
-        <p>Seek and offer help whenever and wherever</p>
-    </div>
-  </div>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-</div>
+<h1>MEET THE TUTORS</h1>/
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non magna a ante fringilla tempor vitae tincidunt dui. Etiam lacinia cursus arcu vitae dictum. Cras quis diam rutrum metus maximus malesuada viverra et sapien. Phasellus dignissim condimentum magna in maximus. Nullam mattis viverra ullamcorper. Morbi nulla eros, malesuada at magna ac, laoreet rutrum orci. Suspendisse dignissim lorem nisl, elementum imperdiet ex eleifend at.</p>
 
-<h2 class="homeTitles">LET'S START</h2>
-<i class="fa fa-graduation-cap" style="font-size:-webkit-xxx-large;"></i>
-<br>
-<h3>I want to teach</h3>
+<p>Maecenas lobortis, ipsum non commodo ullamcorper, quam tellus tincidunt diam, id fermentum tellus nibh eu urna. Duis in molestie quam, sed dapibus mauris. Mauris aliquet lorem ut nisi scelerisque vestibulum. Phasellus sed suscipit velit. Vestibulum ultricies tincidunt ultricies. In quis nibh a nunc volutpat aliquam quis ac purus. Nullam vitae eros ac leo feugiat aliquet. Donec et condimentum orci, vitae lobortis diam. Suspendisse venenatis dui et est molestie, a iaculis augue pharetra. Integer tempus blandit sollicitudin. Curabitur at sodales elit, a sagittis quam. Proin leo nunc, bibendum sit amet libero eu, bibendum posuere mauris.</p>
 
-<i class="fa fa-pencil" style="font-size:-webkit-xxx-large;"></i>
-<br>
-<h3>I want to learn</h3>
-
-<br>
-<br>
-<button class="btn btn-default" type="submit" style="text-align:center;">1192 Registered Tutors</button>
-<button class="btn btn-default" type="submit">6973 Registered Students</button>
-
-
-<h2>COURSES</h2>
-<h3>Math</h3>
-<img src="images/tobias.jpg" alt="tobias" class="img-circle" width=100 height=100>
-<h3>Language</h3>
-<img src="feliks2.jpg" alt="feliks" class="img-thumbnail" width=100 height=100>
-<h3>Other</h3>
-<img src="jon.jpg" alt="jon" class="img-rounded" width=100 height=100>
-
-<h2>BEST RATED TUTORS</h2>
-<div class="row">
-    <div class="col-xs-6 col-md-3">
-      <a href="#" class="thumbnail">
-        <img src="images/feliks.jpg" alt="...">
-      </a>
-    </div>
-    <div class="col-xs-6 col-md-3">
-      <a href="#" class="thumbnail">
-        <img src="images/feliks.jpg" alt="...">
-      </a>
-    </div>
-    <div class="col-xs-6 col-md-3">
-      <a href="#" class="thumbnail">
-        <img src="images/feliks.jpg" alt="...">
-      </a>
-    </div>
-    <div class="col-xs-6 col-md-3">
-      <a href="#" class="thumbnail">
-        <img src="images/feliks.jpg" alt="...">
-      </a>
-    </div>
-    <div class="col-xs-6 col-md-3">
-      <a href="#" class="thumbnail">
-        <img src="images/feliks.jpg" alt="...">
-      </a>
-    </div>
-    <div class="col-xs-6 col-md-3">
-      <a href="#" class="thumbnail">
-        <img src="images/feliks.jpg" alt="...">
-      </a>
-    </div>
-    <div class="col-xs-6 col-md-3">
-      <a href="#" class="thumbnail">
-        <img src="images/feliks.jpg" alt="...">
-      </a>
-    </div>
-    <div class="col-xs-6 col-md-3">
-      <a href="#" class="thumbnail">
-        <img src="images/feliks.jpg" alt="...">
-      </a>
-    </div>
-  </div>
-
-<!-- Create this page eventually -->
+<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus laoreet ligula vel egestas iaculis. Curabitur pretium quam ut sapien dapibus, vitae dapibus turpis lacinia. Quisque eu enim mollis dui fermentum feugiat. Nam iaculis malesuada turpis ac fringilla. In at convallis elit. Fusce faucibus pulvinar ligula id lacinia. Fusce ac cursus magna. In luctus iaculis fringilla. Nunc scelerisque luctus tincidunt. Duis in lacus arcu. Sed vulputate scelerisque arcu ut lacinia. Donec volutpat molestie velit sed faucibus.</p>
+<!-- Create this page eventually
 <p>If you want to read more about Ademiq's online platform, check out <a href="how-it-works.html">"How it Works"</a></p>
 
 <!-- Simply linking to the same page -->
-<p><a href="index.html" style="color green";>To the top</a></p>
+<p><a href="tutors.html";>To the top</a></p>
+
+</div>
+
+<section class="footerSection">
+<div class="container">
+<div class="mainFooterRow">
+  <div class="col-xs-12 col-md-4" style="text-align:center;">
+    <ul class="ulFooter">
+      <li><h3 style="color:#FFF;">OUR PLATFORM</h3></li>
+      <li><a href="introduction.html">About Ademiq</a></li>
+      <li><a href="news.html">Ademiq Blog</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Ademiq Portal</a></li>
+    </ul>
+  </div>
+  <div class="col-xs-12 col-md-4" style="text-align:center;">
+    <ul class="ulFooter">
+      <li><h3 style="color:#FFF;">TUTORS</h3></li>
+      <li><a href="#">How can I become a tutor?</a></li>
+      <li><a href="#">Which are the most requested disciplines?</a></li>
+      <li><a href="#">What's the payment method?</a></li>
+      <li><a href="#">What's the language used for teaching?</a></li>
+    </ul>
+  </div>
+  <div class="col-xs-12 col-md-4" style="text-align:center;">
+    <ul class="ulFooter">
+      <li><h3 style="color:#FFF;">STUDENTS</h3></li>
+      <li><a href="#">How can I find a tutor?</a></li>
+      <li><a href="#">Do I need to have a specific expertise?</a></li>
+      <li><a href="#">Can I be both a tutor and a student?</a></li>
+      <li><a href="#">How can I pay for a class?</a></li>
+    </ul>
+  </div>
+  <div class="col-xs-12 col-md-12" style="text-align:center;">
+    <hr class="hrWhite">
+    <a href="contact.html"><h3 style="color:#FFF !important;">CONTACT US</h3></a>
+    <hr class="hrWhite">
+  </div>
+</div>
 
   <footer class="mainFooter">
     <h3>FOLLOW US</h3>
     <div class="footerSocial">
-      <i class="fa fa-facebook"></i>
-      <i class="fa fa-twitter"></i>
-      <i class="fa fa-google"></i>
-      <i class="fa fa-linkedin"></i>
+      <i class="fa fa-facebook" style="font-size:30px;"></i>
+      <i class="fa fa-twitter" style="font-size:30px;"></i>
+      <i class="fa fa-google" style="font-size:30px;"></i>
+      <i class="fa fa-linkedin" style="font-size:30px;"></i>
     </div>
     <p>Copyright &copy; 2017 <a href="#" title="Ademiq">Ademiq.com</a></p>
   </footer>
 </div>
+</section>
+
 <!-- JAVASCRIPT AND JQUERY LINKS -->
 <script
   src="https://code.jquery.com/jquery-3.2.1.js"

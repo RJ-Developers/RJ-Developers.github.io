@@ -10,62 +10,42 @@ body {
 .body {
   margin: 0 auto;
   padding-top:70px;
-  width: 70%;
+  width: 100%;
   clear: both; /*Makes flow properly */
 }
 
-.mainHeader nav img {
-  width: 5%;
-  height: auto;
-  margin-left: 20px;
-  border-radius: 5px;
-  -moz-border-radius: 5px; /* Just to ensure it shows properly on mozilla, similar for the one below */
-  -webkit-border-radius: 5px;
-  float:left;
+.navbar-default {
+  background-color:#FFF;
 }
 
-.mainHeader nav {
-  background-color: #FFF;
-  /* height: 40px; */
-  width: 100%;
-  position: fixed;
-  top: 0px;
-  padding-top: 10px;
-  z-index: 1;
+/* SETTING BLUE TEXT ON HEADER MENU AND CLEANING UP DEFAULT STYLE*/
+.navbar-default .navbar-nav>li>a {
+  color:#42a5f5;
 }
 
-.mainHeader nav ul {
-  list-style: none;
-  display:inline-block;
-  margin: 0 auto;
-  width: 90%;
+.navbar-default .navbar-nav>.active>a {
+  background-color:#FFF;
+  color:#42a5f5;
+  text-decoration:underline;
 }
 
-.mainHeader nav ul li {
-  float: left;
-  display: inline;
+ .navbar-default .navbar-nav>.active>a:hover {
+  background-color:#FFF;
+ }
+
+/* MAKING SURE DROPDOWN MENU ALSO HAS CORRECT STYLE */
+ .dropdown-menu>li>a {
+  color:#42a5f5;
+ }
+
+/* MOVING LOGO UPWARDS */
+ .navbar>.container-fluid .navbar-brand {
+    padding-top: 0px;
 }
 
-.mainHeader nav ul li:last-child {
-  float:right;
-}
-
-.mainHeader nav a:link, .mainHeader nav a:visited {
-  color: #42a5f5;
-  display: inline-block;
-  padding: 10px 25px;
-}
-
-.mainHeader nav a:hover, .mainHeader nav a:active, .mainHeader nav .active a:link, .mainHeader nav .active a:visited {
-  background-color: #FFF;
-  text-shadow: none;
-}
-
-/* Rounded corners on selected header menu */
-.mainHeader nav ul li a {
-  border-radius: 5px;
-  -moz-border-radius: 5px; /* Just to ensure it shows properly on mozilla, similar for the one below */
-  -webkit-border-radius: 5px;
+.navbar-brand>img {
+  width: 100px;
+  height: 50px;
 }
 
 .mainContent {
@@ -146,8 +126,8 @@ body {
   border-radius: 5px;
   -moz-border-radius: 5px; /* Just to ensure it shows properly on mozilla, similar for the one below */
   -webkit-border-radius: 5px;
-  background-color: #666;
-  margin: 2% 0; /* can also write margins like this. 1. top and bottom 2. left and right.*/
+  background-color: #222222;
+  margin: 0 0; /* can also write margins like this. 1. top and bottom 2. left and right.*/
 }
 
 .mainFooter p, .mainFooter p a, .mainFooter h3 {
@@ -159,6 +139,7 @@ body {
 
 .footerSocial {
   text-align:center;
+  word-spacing: 20px;
 }
 
 li.dropdown {
@@ -331,6 +312,50 @@ video {
     -webkit-border-radius: 5px;
 }
 
+.mainFooterRow {
+  padding-bottom:20px;
+  width:80%;
+  margin: auto auto;
+}
+
+.ulFooter {
+  list-style: none;
+  padding-left:0px;
+}
+
+.ulFooter li, .ulFooter li a {
+  padding-bottom: 4px;
+  font-size: 110%;
+}
+
+
+.container {
+  width:100%;
+  text-align:center;
+  background-color:#222222;
+}
+
+.footerSection {
+}
+
+.page-section {
+  width: 80%;
+  margin: auto auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .homeTitles {
   text-align: center;
 }
@@ -371,3 +396,58 @@ video {
     -ms-user-select: none;
     user-select: none;
 }
+
+
+/* THIS IS OLD MANUAL HEADER MENU
+/*.mainHeader nav img {
+  width: 5%;
+  height: auto;
+  margin-left: 20px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;  Just to ensure it shows properly on mozilla, similar for the one below 
+  -webkit-border-radius: 5px;
+  float:left;
+}*/
+
+/*.mainHeader nav {
+  background-color: #FFF;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  padding-top: 10px;
+  z-index: 1;
+}
+
+.mainHeader nav ul {
+  list-style: none;
+  display:inline-block;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.mainHeader nav ul li {
+  float: left;
+  display: inline;
+}
+
+.mainHeader nav ul li:last-child {
+  float:right;
+}
+
+.mainHeader nav a:link, .mainHeader nav a:visited {
+  color: #42a5f5;
+  display: inline-block;
+  padding: 10px 25px;
+}
+
+.mainHeader nav a:hover, .mainHeader nav a:active, .mainHeader nav .active a:link, .mainHeader nav .active a:visited {
+  background-color: #FFF;
+  text-shadow: none;
+}
+
+/* Rounded corners on selected header menu
+.mainHeader nav ul li a {
+  border-radius: 5px;
+  -moz-border-radius: 5px; /* Just to ensure it shows properly on mozilla, similar for the one below */
+ /* -webkit-border-radius: 5px;
+}*/
